@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 djangorestframework = "*"
-django = "*"
+django = "==3.2.19"
 pillow = "*"
 
 [dev-packages]
