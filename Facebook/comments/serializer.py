@@ -1,8 +1,13 @@
 from rest_framework import serializers
-from .models import Comment
+from .models import Author, Book
 
-class CommentSerializer(serializers.ModelSerializer):
+class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Comment
+        model = Author
+        fields = '__all__'
+        
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
         fields = '__all__'
         #fields = ['text']
